@@ -1,4 +1,4 @@
- ## The "Command" Design Pattern
+## The **Command** Design Pattern
 
 
 
@@ -24,13 +24,12 @@ void InputHandler::handleInput()
 
 
 
-### Sources
-https://gameprogrammingpatterns.com/command.html
-
-
-
 ### Pros & Cons 
 
 | pros         | cons |
 | ------------ | ---- |
 |  |  |
+
+
+### Sources
+https://gameprogrammingpatterns.com/command.html

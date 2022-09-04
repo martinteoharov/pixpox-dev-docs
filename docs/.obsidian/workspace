@@ -1,0 +1,144 @@
+{
+  "main": {
+    "id": "c6bbc552e17e099e",
+    "type": "split",
+    "children": [
+      {
+        "id": "fd95d7b718163392",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "README.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "95c16048a4c914fc",
+    "type": "split",
+    "children": [
+      {
+        "id": "991c3987180b458a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9e24824a2449505c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "174d4ff68473ad2d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "bc99b41089324b85",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9ff558a7b722994c",
+    "type": "split",
+    "children": [
+      {
+        "id": "592577f623d4a789",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0a476b8f37d34206",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "36ac0a616b050150",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "08611fe39ac053be",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "3417e8178dd056bd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "fd95d7b718163392",
+  "lastOpenFiles": [
+    "Entity Component System/ecs.md",
+    "World/world.md",
+    "Design Patterns/singleton.md",
+    "Design Patterns/command.md",
+    "Design Patterns/observer.md",
+    "Automaton/automaton.md",
+    "README.md",
+    "Sources.md",
+    "images/Pasted image 20220722164323.png",
+    "images/Pasted image 20220722164326.png"
+  ]
+}
