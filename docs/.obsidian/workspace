@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
+            "file": "Design Patterns/entity-component-system.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Design Patterns/entity-component-system.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Design Patterns/entity-component-system.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Design Patterns/entity-component-system.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "fd95d7b718163392",
   "lastOpenFiles": [
-    "Entity Component System/ecs.md",
+    "README.md",
+    "Design Patterns/entity-component-system.md",
+    "index.md",
+    "Automaton/automaton.md",
+    "Design Patterns/command.md",
+    "Sources.md",
     "World/world.md",
     "Design Patterns/singleton.md",
-    "Design Patterns/command.md",
     "Design Patterns/observer.md",
-    "Automaton/automaton.md",
-    "README.md",
-    "Sources.md",
-    "images/Pasted image 20220722164323.png",
-    "images/Pasted image 20220722164326.png"
+    "images/Pasted image 20220722164323.png"
   ]
 }

@@ -1,19 +1,18 @@
 ## PixPox Engine
 
-PixPox is a 2D Engine built around the concept of having every pixel on screen be physically simulated using simple [automaton](https://en.wikipedia.org/wiki/Automaton) rules! 
+PixPox is a 2D Engine built around the concept of simulating every pixel on screen using simple [automaton](https://en.wikipedia.org/wiki/Automaton) rules! 
 
 This obsidian vault is to be a research database of the design patterns and algorithms used throughout the project.
 
 
 ### Book Index
-- Design Patterns ([[index]])
+- Design Patterns
+	- [[entity-component-system]]
 	- [[command]]
 	- [[singleton]]
 	- [[observer]]
 - Automaton
 	- [[automaton]]
-- Entity Component System
-	- [[ecs]]
 - World
 	- [[world]]
 
