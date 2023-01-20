@@ -1,22 +1,27 @@
-## Entity Component System
+# Entity Component System
 
-Entity Component System or ECS for short is a design pattern used in gamedev for the representation of game world objects. An ECS comprises entities composed from components of data, with systems which operate on said entities' components.
+Entity Component System (ECS) is a design pattern responsible for representing the world and its various objects (player, light, physics, etc..). An ECS comprises of entities, which are composed of components and lastly systems which operate on said entities.
 
+This design pattern allows us to build logic that is incredibly flexible while also being immensely performative. it is the best choice for a complicated game engine full of various interconnected behaviour.
 
-### Unique Identifiers
+### How it is built
 
+- ##### Unique Identifiers
+	
+	Every entity and every component has a unique identifier associated with it. 
+	Unique sequential IDs are managed using a Queue data-structure.
 
-
-### Entities
-
-
-### Components
-
-
-### Systems
-
+- ##### Signatures
+	asd
 
 
+- ##### Entities
+- ##### Components
+- ##### Systems
 
-### Rust typesystem to the rescue
+
+
+
+### Rust TypeSystem integration
+
 

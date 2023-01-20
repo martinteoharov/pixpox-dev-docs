@@ -4,16 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "fd95d7b718163392",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Design Patterns/entity-component-system.md",
-            "mode": "source",
-            "source": false
+        "id": "17da5b64f97dfd96",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fd95d7b718163392",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Design Patterns/command.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        }
+        ]
       }
     ],
     "direction": "vertical"
@@ -31,7 +37,9 @@
             "type": "leaf",
             "state": {
               "type": "file-explorer",
-              "state": {}
+              "state": {
+                "sortOrder": "alphabetical"
+              }
             }
           },
           {
@@ -77,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Design Patterns/entity-component-system.md",
+                "file": "Design Patterns/command.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Design Patterns/entity-component-system.md",
+                "file": "Design Patterns/command.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,28 +125,28 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Design Patterns/entity-component-system.md"
+                "file": "Design Patterns/command.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "fd95d7b718163392",
+  "active": "9e24824a2449505c",
   "lastOpenFiles": [
+    "Design Patterns/entity-component-system.md",
     "Design Patterns/observer.md",
     "Design Patterns/command.md",
-    "Design Patterns/entity-component-system.md",
+    "Design Patterns/singleton.md",
+    "images/Pasted image 20220722164326.png",
     "README.md",
+    "2022-10-29.md",
     "index.md",
     "Automaton/automaton.md",
-    "Sources.md",
-    "World/world.md",
-    "Design Patterns/singleton.md",
-    "images/Pasted image 20220722164323.png"
+    "Sources.md"
   ]
 }

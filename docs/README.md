@@ -13,6 +13,8 @@ This obsidian vault is to be a research database of the design patterns and algo
 	- [[observer]]
 - Automaton
 	- [[automaton]]
+- Renderer
+	- 
 - World
 	- [[world]]
 
