@@ -6,25 +6,13 @@ This obsidian vault is to be a research database of the design patterns and algo
 
 
 ### Book Index
+- The [[Vision]] for PixPox
 - Design Patterns
-	- [[entity-component-system]]
-	- [[command]]
-	- [[singleton]]
-	- [[observer]]
+	- [[Entity-component-system]]
+	- [[Command]]
 - Automaton
-	- [[automaton]]
+	- [[Automaton]]
 - Renderer
-	- 
+	- [[Renderer]]
 - World
-	- [[world]]
-
-
-### Timeline
-- September 2022 
-	- Establish basic & modular file structure (done)
-	- Design Patterns research
-	- Rendering basics
-	- ECS basics
-- October, November, December 2022
-- January, February, March 2023
-- April, May, June 2023
+	- [[World]]
