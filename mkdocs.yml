@@ -1,4 +1,4 @@
-site_name: obsidian-mkdocs template
+site_name: PixPox Dev Docs
 
 theme:
     name: 'material'
