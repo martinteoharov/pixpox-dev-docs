@@ -1,5 +1,5 @@
 
-For a summary of the concept, read [[Vision#Entity Component System]].
+For a summary of the concept, read [[I. Vision#Entity Component System]].
 
 The Entity Component System (ECS) is a powerful design pattern that facilitates the representation of a game world and its myriad of objects and algorithms, such as players, lights, terrain, physics, and more. An ECS comprises of entities, which are composed of components and lastly systems which operate on said entities.
 
