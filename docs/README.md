@@ -7,8 +7,8 @@ This obsidian vault is to be a research database. It will document the design pa
 ### Book Index
 - [[I. Vision]]
 - [[II. World]]
-- [[III. Cellular Automaton]]
-- [[IV. Renderer]]
+- [[IV. Cellular Automaton]]
+- [[V. Renderer]]
 
 
 ---

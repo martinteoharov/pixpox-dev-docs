@@ -1,4 +1,10 @@
 
+### Pixels
+
+### Dear ImGui
+
+
+
 The PixPox renderer will be written from scratch and will, in practice, act as a wrapper for WGPU (which is a low-level rendering library that is one abstraction above OpenGL, Vulkan and other backends).
 
 This file contains all of the approaches I have taken to:

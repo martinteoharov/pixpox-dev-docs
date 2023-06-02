@@ -1,7 +1,7 @@
 
 PixPox is inspired by the roguelike [Noita](https://store.steampowered.com/app/881100/Noita/).
 
-The aim is to provide game developers with the essentials tools for creating games similar to the aformentioned. The Cellular Automaton computation is optimized to run on the CPU making use of multi-threading for parallelization (or perhaps SIMD at a later stage). No GPU acceleration has been or is planned to be implemented in the context of CA. 
+The aim is to provide game developers with the essentials tools for creating games similar to the aformentioned. The Cellular Automaton computation is optimized to run on the CPU making use of multi-threading for parallelization. No GPU acceleration has been or is planned to be implemented in the context of CA. 
 
 
 ## Overview of design; Main concepts
@@ -21,7 +21,7 @@ The developer also has to create a GlobalPixelMap which is passed to the Rendere
 
 ### Entity Component System
 
-The Entity Component System consists of three main parts: entities, components, and systems. An entity is an object in the game world that has a unique identifier. Components are individual attributes that make up an entity, such as position or health. Finally, systems operate on one or more components, allowing entities to move, interact, or behave in some way.
+The Entity Component System consists of three main parts: entities, components, and systems. An entity is an object in the game world that has a unique identifier. Components are individual attributes that make up an entity, such as position or health. Finally, systems operate on one or more components, allowing entities to move, interact, or behave in some specified way.
 
 The primary benefit of using an Entity Component System in game development is that it allows for greater flexibility and reusability of code. By separating entities into their component parts, game developers can create more modular and extensible code that can be more easily modified and reused across different types of games.
 
@@ -29,7 +29,7 @@ Additionally, the separation of components in an Entity Component System also si
 
 PixPox's implementation of the Entity Component System pattern is unique in that every component implements its own system. This differs from more common implementations of ECS, where systems are typically implemented independently of the components. At present, there is no way to create a system that is not attached to a component in PixPox. Despite this difference, the core benefits of the Entity Component System pattern, such as improved abstraction and parallelization, still apply to PixPox.
 
-There is more things to discuss in terms of the ECS implementation, such as - queries, storage systems, mutexes and parallelisation, but that will be its own page.
+There are additional aspects related to the ECS implementation that merit discussion, such as queries, storage systems, mutexes, and parallelization. However, these will be detailed on a separate page.
 
 ### Rendering
 

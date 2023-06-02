@@ -11,9 +11,11 @@ The separation of components in an ECS also simplifies parallelization, which ca
 
 ### Entities
 
-Entities are very simple. They are basically just a number - their ID. The EntityManager struct also includes methods for creating and deleting entities for ease of use.
+Entities are very simple. They are basically just a number - their ID. The EntityManager struct also includes methods for creating and deleting entities.
 
--  Unique Identifiers
+**Fields:**
+
+-  id
 
 	Each entity in the game world possesses a unique identifier. These IDs start from 0 and increment by 1 for every new entity that's created. At present, the ID value doesn't decrement on entity removal, as it's deemed unnecessary. In the future, a better implementation will utilize a queue data structure to retrieve the smallest possible ID for a new entity.
 
@@ -22,15 +24,36 @@ Entities are very simple. They are basically just a number - their ID. The Entit
 
 Components are stored in the world in a `Vec<Box<dyn ComponentVec>>` structure, which allows for efficient memory packing. This data structure is essentially a vector of heap-allocated vectors with additional custom logic attached to the inner vector.
 
-// TODO: Clarify this & Make sure its real lmao top kek hAHAH!
+// TODO: Clarify this & Make sure it makes complete sense
 One advantage of this approach is that it enables us to optimize memory usage by packing data tightly into the smallest amount of memory required. This is achieved by organizing the components in memory so that there are no gaps between them, which reduces the amount of unused space in memory. In addition, the use of heap-allocated vectors allows for easy dynamic allocation and modification of components as needed during runtime.
 
+As a developer using PixPox, you have the freedom to create custom components. However, it is essential that these components implement specific traits so that they are accepted by the engine.
+
+``` rust
+pub trait Label {
+    fn label(&mut self) -> &'static str;
+}
+
+pub trait Run {
+    fn run(&mut self, storage: &Storage);
+}
+
+pub trait Update {
+    fn update(&mut self, storage: &RwLock<Storage>);
+}
+```
+
+The `Label` trait requires that every component has a `label()` method that prints out its type. This is useful for debugging purposes.
+
+The `Run` trait specifies a `run()` method that is executed for each component whenever `world.run()` is called. This function is parallelized using multi-threading and only has read access to the storage. It is designed for heavy computation, and no updates are allowed.
+
+The `Update` trait specifies an `update()` method, which much like `run()`  is executed on every pass of `world.run()`. It is also parallelized, but its given a `RwLock` instead of an immutable reference. This method is meant to update the world when a change is present, and it should not attempt to obtain a `.write()` lock on the storage when no changes are present, as doing so would adversely impact performance.
 
 ### Systems
 
-In PixPox, systems are incorporated as part of the component. Every component features two mandatory system functions: `Run()` and `Update()`. During the `world.run()` call, both functions are executed.
+In PixPox, systems are incorporated as part of the component. Every component features two mandatory system functions: `Run()` and `Update()` as discussed in the above section. During the `world.run()` call, both functions are executed.
 
-Firstly, `Run()` is called on all components, with a reference to a `RWLock` (Read-Write Lock) that's then distilled into a read-only access to the storage. It's important to note that the `Run()` method is not allowed to modify anything in the global storage. This approach is necessary because the `Run()` calls are parallelized.
+Firstly, `Run()` is called on all components, with an immutable reference to the storage. It's important to note that the `Run()` method is not allowed to modify anything in the global storage. This approach is necessary because the `Run()` calls are parallelized.
 
 Once all `Run()` methods have been executed, `Update()` is called on each component, with a reference to a `RWLock` that's distilled into a reference of write-access to the storage. The philosophy of the `Update()` function is all about updating the global storage. As such, it shouldn't contain any computationally intensive code.
 
