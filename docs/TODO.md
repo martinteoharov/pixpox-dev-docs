@@ -14,6 +14,7 @@
 	- [ ] Clean code up
 		- [ ] Find a way to remove all unnecessary imports
 		- [ ] Define rules for linting and formatting (alphabetical imports, remove unnecessary imports)
+	- [ ] Rewrite README.md
 	- [ ] Fix ECS and Conway examples
 	- [ ] Benchmarks for Cell Realm
 	- [ ] Suite of tests for the whole repo
